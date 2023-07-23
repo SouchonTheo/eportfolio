@@ -18,11 +18,7 @@ export default function Header({ color }) {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
   return (
     <>
@@ -64,18 +60,23 @@ export default function Header({ color }) {
             alignSelf={"center"}
             position={"relative"}
           >
-            <Button
-              colorScheme={color}
-              bg={`${color}.400`}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: `${color}.500`,
-              }}
-              onClick={linkedin}
+            <a
+              href="https://linkedin.com/in/theo-souchon/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Let's connect!
-            </Button>
+              <Button
+                colorScheme={color}
+                bg={`${color}.400`}
+                rounded="full"
+                px={6}
+                _hover={{
+                  bg: `${color}.500`,
+                }}
+              >
+                Let's connect!
+              </Button>
+            </a>
             <Button
               variant={"link"}
               colorScheme={"blue"}

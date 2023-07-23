@@ -39,7 +39,11 @@ const parseExperience = (mdContent) => {
           const buttonText = match[1]; // Contient le nom du bouton (dans cet exemple, "Internship")
           const buttonHref = match[2]; // Contient le lien du bouton (dans cet exemple, "https://www.google.fr/")
 
-          buttons.push({ text: buttonText, href: buttonHref });
+          buttons.push({
+            text: buttonText,
+            href: buttonHref,
+            target: "_blank",
+          });
         } else {
           listItems.push(lines[i].substr(4)); // Ajoute le reste de la ligne sans le préfixe "- "
         }

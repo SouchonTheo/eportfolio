@@ -111,7 +111,7 @@ export default function Experience({ color }) {
                                 <span style={{ marginRight: "10px" }} />
                               )}{" "}
                               {/* Adjust the margin as needed */}
-                              <a href={button.href}>
+                              <a href={button.href} target={button.target}>
                                 <Button color={`${color}.400`}>
                                   {button.text}
                                 </Button>

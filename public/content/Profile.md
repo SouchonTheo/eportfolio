@@ -10,7 +10,7 @@ Meet a passionate software engineer with an insatiable curiosity for cutting-edg
 
 ## Contact
 - LinkedIn: https://linkedin.com/in/theo-souchon/
-- GitHub: https://github.com/theosouchon
+- GitHub: https://github.com/SouchonTheo
 - Email: souchontheo24@gmail.com 
 
 ## Logo

@@ -110,7 +110,7 @@ export default function Nav({ color }) {
                 <Button variant="ghost" onClick={scrollToContact}>
                   Contact
                 </Button>
-                <Button variant="ghost"><a href="pdf/cv.pdf">CV</a></Button>
+                <Button variant="ghost"><a href="pdf/cv.pdf" target="_blank">CV</a></Button>
               </>
             ) : (
               <></>

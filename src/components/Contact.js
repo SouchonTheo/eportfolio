@@ -13,14 +13,11 @@ import ProfileArray from "./ProfileArray";
 
 export default function Contact({ color }) {
   const profile = ProfileArray();
-  const linkedin = () => {
-    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
-  };
   const github = () => {
-    window.open(`${profile.github}`, "_blank", "noreferrer,noopener");
+    window.open(`${profile.github}`, "_blank", "noopener,noreferrer");
   };
   const email = () => {
-    window.open(`mailto:${profile.email}`, "_blank", "noreferrer,noopener");
+    window.open(`mailto:${profile.email}`, "_blank", "noopener,noreferrer");
   };
   return (
     <>
@@ -55,9 +52,25 @@ export default function Contact({ color }) {
             </Text>
             <Center>
               <HStack pt={4} spacing={4}>
-                <FaLinkedin onClick={linkedin} size={28} />
-                <FaGithub onClick={github} size={28} />
-                <FaEnvelope onClick={email} size={28} />
+                <a
+                  href={"https://linkedin.com/in/theo-souchon/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={28} />
+                </a>
+                <a
+                  href={"https://github.com/SouchonTheo"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={28} />
+                </a>
+                <a
+                  href={"mailto:souchontheo24@gmail.com"}
+                >
+                  <FaEnvelope size={28} />
+                </a>
               </HStack>
             </Center>
           </Stack>
